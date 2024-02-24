@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Começa com "como"</title>
+    <link rel="icon" type="image/x-icon" href="assets/mind-ico.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+        <div class="header">
+            <a class="navbar-brand" href="#">Marçal Ipsum</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="github-link">
+                <a href="https://github.com/JCDMaciel/Marcal-Ipsum">
+                    <span class="icon-link">🔗</span> GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div>
+        <img src="assets/marcal.jpg" alt="Personagem Marçal" class="personagem-img">
+    </div>
+
+    <div class="phrases-group">
+        <p>Como gerar mais paragrafos?</p>
+        <div class="btn-group">
+            <button class="btn btn-secondary" onclick="gerarFrases(1)">1</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(2)">2</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(3)">3</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(4)">4</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(5)">5</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(6)">6</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(7)">7</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(8)">8</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(9)">9</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(10)">10</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(11)">11</button>
+            <button class="btn btn-secondary" onclick="gerarFrases(12)">12</button>
+            <button id="copiar-btn" class="btn btn-primary" onclick="copiarFrases()">Copiar</button>
+        </div>
+
+        <div class="frase-container" id="frase-container">
+            <!-- Frases geradas -->
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="../models/Frase.js"></script>
+<script src="../models/Marcal.js"></script>
+<script src="../controllers/MarcalController.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
